@@ -1,6 +1,21 @@
 # UbuntuWebDevSetup
 
 
+This script installs the following in order.
+-Git
+-mysql-server
+-mysql-workbench
+-curl
+-build essential
+-snapd
+-visual studio code
+-nvm
+-raises the inotify watcher limit
+-apt-transport-https curl //for brave
+-Brave browser
+
+
+
 
 First Step is to Run the main UbuntuSetup.sh file
 then you run the keyGen file to get the github ssh key.
