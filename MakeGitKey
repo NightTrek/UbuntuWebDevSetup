@@ -1,0 +1,4 @@
+ssh-keygen -t rsa -b 4096 -C "daniels@dual4t.com"
+eval "$(ssh-agent -s)"
+ssh-add -K /Users/$USER/.ssh/id_rsa
+cat ~/.ssh/id_rsa.pub
