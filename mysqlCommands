@@ -1,0 +1,8 @@
+//login to mysql using sudo
+sudo mysql -u root
+//set MYSQL to use a string password instead of normal linux root
+UPDATE mysql.user SET plugin = 'mysql_native_password' WHERE user = 'root' AND plugin IN ('unix_socket', 'auth_socket');
+//Set the pasword for the root user to be "password"
+UPDATE mysql.user SET authentication_string = PASSWORD('password') WHERE User = 'root' AND Host = 'localhost';
+//flush and restart mysql
+FLUSH PRIVILEGES;
