@@ -11,6 +11,7 @@ sudo echo "PATH=$PATH$CPATH" > /etc/environment
 source /etc/environment
 sudo snap install --classic code
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+sudo chmod 777 -R ~/.nvm
 echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
 sudo apt install apt-transport-https curl
