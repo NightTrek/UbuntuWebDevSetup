@@ -3,6 +3,9 @@ sudo apt install mysql-server -y
 sudo apt-get install mysql-workbench
 sudo apt-get install curl
 sudo apt-get install build-essential
+sudo apt-get install autoconf automake libtool make g++ unzip
+sudo apt install protobuf-compiler
+sudo apt-get install ffmpeg
 sudo rm /etc/apt/preferences.d/nosnap.pref
 sudo apt update
 sudo apt install snapd
