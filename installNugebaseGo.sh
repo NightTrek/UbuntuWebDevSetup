@@ -15,4 +15,5 @@ cd protobuf-3.14.0/
 make
 make check
 sudo make install
+sudo ldconfig
 protoc --version
